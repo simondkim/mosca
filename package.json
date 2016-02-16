@@ -1,5 +1,5 @@
 {
-  "name": "mosca",
+  "name": "mosca-bitfinder",
   "version": "1.0.2",
   "description": "MQTT broker as a module",
   "main": "index.js",
@@ -17,11 +17,6 @@
     "bundle": "browserify -r mqtt -s mqtt | uglifyjs --screw-ie8 > public/mqtt.js",
     "prepublish": "npm run bundle"
   },
-  "pre-commit": [
-    "jshint-lib",
-    "jshint-test",
-    "test"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mcollina/mosca.git"
